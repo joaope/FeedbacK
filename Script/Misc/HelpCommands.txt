@@ -1,0 +1,130 @@
+about~ ~Opens About dialog.
+action~<text>~Performs an action on active channel, chat or query window.<CRLF2>Check /me or /describe commands.*
+addfriend~<+ovcsepVObkua-ovcsepVObkua> <nick|mask> [networks|*] [channels|*] [nick] [password] [nickcolor] [comments]~Add <nick>\<mask> to userlist as a friendly user with specified flags. All other parameters are optional.<CRLF2>If nick already listed all parameters are changed to the specified ones.<CRLF2>Check Userlist dialog and Userlist help topic for more informations including flags description. 
+addshit~<nick|mask> [networks|*] [channels|*] [nickcolor] [reason]~Add <nick>\<mask> to userlist as a shit user.<CRLF2>All other parameters are optional.<CRLF2>Check Userlist help topic for more informations.
+advanced~ ~Opens Advanced Options dialog.
+alarm~<-tco> [HH:mm|Off] [N|Off]~-t sets a timed alarm to [HH:mm].<CRLF>-c sets countinuous alarm to act every [N] minutes, from 0 to 59.<CRLF2>You can use both flags and parameters at the same time. If "Off" is specified timed and\or coninuous alarm are turned off. If -o is specified Alarm Options dialog is opened.<CRLF2>Check /alarmopt command.
+alarmopt~ ~Opens Alarm Options dialog. Same as "/alarm -o".
+all~<command>~Performs command in all current active connections.<CRLF2>Eg: if you want to change your nick in all servers you're connected just use '/all nick MyNewNick'.
+ame~<text>~Performs an action on all open channels.*
+amsg~<text>~Sends specified message to all open channels.
+aoptions~ ~Opens Advanced Options dialog.<CRLF2>Same as /advanced commmand.
+aquit~[message]~Quits all current connections with message. If no message specified default one is used.
+ascii~ ~Opens Ascii Viewer dialog.
+autojoin~ ~Performs autojoin using channels from General Options dialog. If it's disable on options "Normal" autojoin method is used.
+away~[text]~Set away mode with [text] as away message. If you're already away current message it's changed to the new one.<CRLF2>It acts like /back command if no parameters and you're already away.*
+back~ ~Marks you as no longer being away.*
+backgrounds~ ~Opens Images dialog.<CRLF2>Same as /images or /bars commands.
+bars~ ~Opens Images dialog.<CRLF2>Same as /images and /backgrounds commans.
+chanstats~[-mtovhu] [#channel]~Display [#channel] users statistics.<CRLF2>-t - Total nicks<CRLF>-o - Operators<CRLF>-v - Voices<CRLF>-h - Halfops<CRLF>-u - Regular users<CRLF2>If no channel specified active one is used. With -m statistics are messaged to channel and not echo'ed to you. 
+chat~[nick]~Begins DCC chat with [nick] If no nick specified script will ask you to input one.
+country~[code]~Translates country code to it's name and prints it to active window.
+cpanel~ ~Opens Control Panel dialog.
+cprot~ ~Opens Channel Protections dialog.<CRLF2>Same as /cprot command.
+cprots~ ~Opens Channel Protections dialog.<CRLF2>Same as /cprots command.
+cs~[commands...]~Shortcut to /chanserv command.
+ctcp~<nick> <ctcp>~Performs an <ctcp> request to <nick>.<CRLF2>See also /ctcpreply command.
+ctcpreply~<nick> <ctcp> [message]~Sends a reply to a ctcp query.<CRLF>See also /ctcp command.*
+deop~<nick1> [nickN]~Removes operator mode (-o) to specified nicks.<CRLF2>See also /op, /voice and /devoice.
+describe~<nick|channel> <message>~Performs an action on <nick> or <channel> with the specified <message>.*
+devoice~<nick1> [nickN]~Removes voice mode (-v) to specified nicks.<CRLF2>See also /op, /deop and /voice.
+dns~[-ch] [nick|address]~Resolves an address.*
+echos~ ~Opens Echos dialog.
+edit~[-o|filename]~Opens internal notepad. You can specify a filename to open or -o to prompt to select one.<CRLF2>See also /notepad command.
+euro~<-els> <initials> <N>~Converts <N> to euro or <N> to local currency (indicated by <initials>) if you specify -e or -l. If you specify -s a message with conversion is sended to active channel or query (if any).<CRLF2>Without parameters opens Euro Converter dialog.<CRLF2>If you use any flag all other parameters are needed. Don't use -e and -l at the same time but use one of them
+exit~ ~Exits script.
+explore~[directory]~Opens Windows Explorer. Specify <directory> to explore it.
+filters~ ~Opens Filters dialog.
+fkeys~ ~Opens Function Keys dialog.
+goptions~[-ni] [network] [item]~Opens General Options dialog with [network] and left-menu [item] selected. Use -n if you specify [network] and -i if you speciy [item].<CRLF2>Same as /general and /options commands.
+general~[-ni] [network] [item]~Opens General Options dialog with [network] and left-menu [item] selected. Use -n if you specify [network] and -i if you speciy [item].<CRLF2>Same as /goptions and /options commands.
+helpd~ ~Opens Help dialog.
+home~ ~Opens internet browser to visit script website.
+hs~[commands...]~Shortcut to /helpserv command.
+id3~[file]~Checks ID3 from specified mp3 [file]. If no file specified it prompts you to select one.
+images~ ~Opens Images dialog.<CRLF2>Same as /bars and /background commands.
+integrity~ ~Checks script integrity verifying if all script file are properly loaded.
+j~[-inx] <#channel>~Joins [#channel] or prompts you for a channel if none specified.<CRLF2>See also /join command.
+join~[-inx] <#channel>~Joins [#channel] or prompts you for a channel if none specified.<CRLF2>See also /j command.*
+lagbar~<on|off>~Turns lagbar <on> or <off>.
+login~[password]~Performs nick login using Login options under General Options dialog. Specify [password] to use it instead option's one.
+logs~ ~Opens Log Viewer window.
+lusers~ ~Lists server users.
+me~<message>~Use it on channels and queries to send an action with <message>.
+mircamp~ ~Opens Sound Player dialog.<CRLF2>Same as /player command.
+mixer~ ~Opens Mixer dialog.
+mk~[#channel]~Performs a mass kick to all users on [#channel] (or active if channel not specified).<CRLF2>See also /mka command.
+mka~[#channel]~Performs a mass kick to all users on [#channel] (or active if channel not specified).<CRLF2>See also /mk command.
+mko~[#channel]~Performs a mass kick to all ops on [#channel] (or active if channel not specified).
+mkh~[#channel]~Performs a mass kick to all halfops on [#channel] (or active if channel not specified).
+mkv~[#channel]~Performs a mass kick to all voices on [#channel] (or active if channel not specified).
+mkr~[#channel]~Performs a mass kick to all regular users on [#channel] (or active if channel not specified).
+mop~[#channel]~Performs a mass op on [#channel] (or active if channel not specified)
+mdeop~[#channel]~Performs a mass deop on [#channel] (or active if channel not specified)
+mvoice~[#channel]~Performs a mass voice on [#channel] (or active if channel not specified)
+mdevoice~[#channel]~Performs a mass devoice on [#channel] (or active if channel not specified)
+mkb~[#channel]~Performs a mass kick ban to all users on [#channel] (or active if channel not specified).<CRLF2>See also /mkba command.
+mkba~[#channel]~Performs a mass kick ban to all users on [#channel] (or active if channel not specified).<CRLF2>See also /mkb command.
+mkbo~[#channel]~Performs a mass kick ban to all ops on [#channel] (or active if channel not specified).
+mkbh~[#channel]~Performs a mass kick ban to all halfops on [#channel] (or active if channel not specified).
+mkbv~[#channel]~Performs a mass kick ban to all voices on [#channel] (or active if channel not specified).
+mkbr~[#channel]~Performs a mass kick ban to all regular users on [#channel] (or active if channel not specified).
+motd~ ~Requests for current server MOTD.
+ms~[commands...]~Shortcut to /memoserv command.
+msg~<target> <message>~Sends specified <message> to [target] (channel, query or chat window)*
+names~[channel]~Requests names from specified or active channel.
+ncomp~ ~Opens Nick Completion dialog.<CRLF2>Same as /nickcomp command.
+nick~<nick>~Changes your current nickname to <nick>.*
+nickcomp~ ~Opens Nick Completion dialog.<CRLF2>Same as /ncomp command.
+nicklist~ ~Opens Nicklist Colors dialog.<CRLF2>Same as /nlist command.
+nlist~ ~Opens Nicklist Colors dialog.<CRLF2>Same as /nicklist command.
+notepad~[-o|filename]~Opens internal notepad. You can specify a filename to open or -o to prompt to select one.<CRLF2>Se also /edit command.
+notes~ ~Opens Notes dialog.
+notice~<nick|#channel> <message>~Sends a notice <message> to <#channel> or <nick>.*
+notify~/notify [-shrl] <on|off|nickname> [note]~Add and remove nickname from mIRC notify list. You can turn it on or off too.*
+ns~[commands...]~Shortcut to /nickserv command.
+op~<nick1> [nickN]~Gives operator mode (+o) to specified nicks.<CRLF2>See also /deop, /voice and /devoice.
+options~ ~~[-ni] [network] [item]~Opens General Options dialog with [network] and left-menu [item] selected. Use -n if you specify [network] and -i if you speciy [item].<CRLF2>Same as /goptions and /general commands.
+os~[commands...]~Shortcut to /operserv command.
+pagers~[-vN]~Opens Pagers dialog. If you specify -vN flag N pager is opened. Can be 0 to open last pager.
+perform~ ~Opens Perform dialog.
+player~[-o]~Opens Player or Player Options dialog if -o is specified.<CRLF2>Check /playeropt command.
+playeropt~ ~Opens Player Options dialog.
+portscan~ ~Opens Portscan dialog.
+pprot~ ~Opens Personal Protections configuration dialog.<CRLF2>Same as /pprots command.
+pprots~ ~Opens Personal Protections configuration dialog.<CRLF2>Same as /pprot command.
+presentation~ ~Show script Presentation.
+profiles~ ~Opens Profiles dialog.
+proto~[-p|c|b]~Opens Protections Options dialog. Specify one flag to open with tab focus (p - Personal, c - Channels and b - Both).
+query~<nickname> [message]~Opens a query window with [nickname]*
+quit~[message]~Quits current server showing reason [message]. default message is used if you don't specify it.*
+readme~ ~Opens script Readme file if any. 
+restart~ ~Restarts script.
+say~<message>~Says <message> to current channel.*
+schemes~ ~Opens Themes dialog allowing you to select you current scheme.
+seen~[-od]~Opens Seen Database if -d specified (default) or Seen Options if -o.<CRLF2>Chech /seendata and /seenopt commands.
+seendata~ ~Opens Seen Database dialog.
+seenopt~ ~Opens Seen Options dialog.
+send~[nick]~Sends file through DCC to [nick].
+settings~<-eslrdcio> [Section1] [SectionN]~Command to handle script settings.<CRLF2>e - View/Edit settings hash tables.<CRLF>s - Save settings hash tables.<CRLF>l - Load settings to hash tables.<CRLF>r - Reset all settings.<CRLF>d - Reset settings to default.<CRLF>c - Compile backup file with all current settings.<CRLF>i - Import settings from backup file.<CRLF>o - Opens settings options dialog.<CRLF>f - Opens backup file if any.<CRLF>t - Deletes backup file if any.<CRLF2>You can only use one flag at time. Exclude sections from action specifying them after flag (check sections names with /settings -e).
+sounds~ ~Opens Event Sounds dialog.
+srv~[-n] [server] [port]~Connects to a new server. If no server and/or port specified they will be asked to you. Use -n to open connection in a new server window.
+sstats~ ~Opens Sockets Statistics dialog.
+statistics~ ~Opens Statistics dialog.
+stats~[letter]~Request server statistic. You can only use one letter each time.~/version, /time, /motd, /lusers
+theme~[N] [filename]~Load theme and it's N scheme (0 or nothing to default). If no parameters Themes dialog is opened.
+themes~ ~Opens Themes dialog.
+time~ ~Requests server for current time.
+tip~ ~Opens Tips dialog.<CRLF2>Same as /tips command.
+tips~ ~Opens Tips dialog.<CRLF2>Same as /tip command.
+umodes~[-d|+modes-modes]~Set user modes to specified modes. If -d default (or away if away) modes from options will be used.
+userlist~[-o]~Opens Userlist dialog or Userlist Options if -o specified.<CRLF2>Check /users and /userlisto commands.
+userlisto~ ~Opens Userlist Options dialog.
+users~ ~Opens Userlist dialog.<CRLF2>Check /userlist command.
+version~ ~Requests server for it's version.
+voice~<nick1> [nickN]~Gives voice mode (+v) to specified nicks.<CRLF2>See also /op, /deop and /devoice.
+w~<nick> [nick]~Shortcut to /whois command.
+whois~<nick> [nick]~Requests information about <nick>. If you specify it twice extended information is showed.<CRLF2>Same as /w command.*
+whois+~<nick>~Same as /whois but it performs a complete whois request.
+whatsnew~ ~Opens script Whatsnew file if any.
+wizard~ ~Opens First Runtime Wizard dialog.

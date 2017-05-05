@@ -1,0 +1,28 @@
+luminosity 1.3 by zioxide
+-------------------------
+luminosity is a theme created for MTS 1.1 by zioxide.  I created it after seeing some nice themes on screenshots on various mirc websites, and I even got the colors for the beach theme from a screenshot of JOKRKNEX.
+luminosity consists of the default scheme, 'midnight', and four schemes: 'beach', 'lunar', 'ice', and '2Graphik'.  A new version with more schemes will be available soon.  To use, just extract to your themes directory, run your mts engine, and select the theme.  Enjoy!
+
+Special thanks to-
+[AFX], bl44t, Rixxon, Sheik, Ami
+Everyone else in #genscripts & VidGameChat
+
+Copyright 2005 zioxide
+irc.vidgamechat.net #zioxide
+
+
+Changes:
+-------------------------
+v1.3
+-Added 2Graphik theme, http://www.2graphik.com
+-Fixed a whois bug that showed a person as always being identified
+-Added support for mirc's highlighting feature
+v1.2
+-Added Ice scheme, by request of [AFX] :)
+-Removed Darkness & Hell schemes, I felt they were sub-par to the rest of the schemes.
+v1.1
+-Changed action display
+v1.0.1
+-Fixed a bug with /describe #chan blah blah where channel name was shown instead of your nickname.
+-Changed the way the DNS displays
+-Fixed a bug with notify displays

@@ -1,0 +1,4 @@
+You can view commands related with each menu item. Just check toogles tab inside 'Advanced' options.
+Use 'Settings' editor to directly edit options. All options names are self-explanatory but you should really known what you're doing.
+You can restart script using /restart command.
+Don't use tips dialog if it's not completed! :P

@@ -1,0 +1,125 @@
+[About]
+»» The script:
+
+FeedbacK (current $_script.version version) is written by me (Mal-Functi) from PTnet network
+
+FeedbacK is a non-crap script, no dirty features and colors. I try to do the clean and fastest code I can without DLLs (fuck them!)
+
+
+
+»» Where I am:
+
+You can find me on PTnet network (irc.ptnet.org) just /whois me. Any comment, bug or if you want to send me some money fill free to mail me to jotex@sapo.pt
+
+
+
+»» To think about:
+
+Are you fucking crazy? No, I'm fucking Daisy!
+
+
+
+
+[Themes]
+mTS (mIRC Themes System) came up from a scripters community from mircscripts.org scripting website. It's idea is to make scripts themes the more portable and flexible as possible with all scripts that have a MTS engine. And there you have, an engine full customable and easy to use that can load themes from all MTS drafts versions until now (1.1 to 1.3).
+
+
+»» Schemes:
+
+Allow you to make slightly changes to your current loaded themes, like minor colors, backgrounds, fonts, etc. Each theme can have infinite schemes (or even none). You can always return to default theme just selecting default scheme.
+
+
+»» Preview:
+
+You can see a little preview of how theme looks like before you load it. You can preview it's schemes too.
+
+
+»» Options:
+
+From themes options you can select all items that you want the engine to load (colors, basecolors, nicklist colors, etc).
+
+Script can check if you have a theme loaded on start and if you don't it will ask you if you want to load one. Selecting 'No' default theme will be used.
+
+Caching themes previews and infos will make faster to script to list all theme informations and preview whenever you click one on Themes dialog.
+
+
+»» Current:
+
+With this MTS engine version I've tried to make current loaded theme customable as possible. You can edit basecolors, prefix (or icon used before some echos), parentext (the way you want text to be surrounded) and you can even edit theme and script file (remember to reload theme again if you do that).
+
+
+»» MTS:
+
+If you want to make your own theme please visit 'http://www.mircscripts.org/mts.php' and read available MTS files for more infos. I guess that could be easier for you if you use another theme file (*.mts) as an example.
+
+Themes download: 'http://www.mircscripts.org/themes.php
+
+
+
+
+
+[Function_Keys]
+It could be usefull for you to use keys shortcuts without typing commands or searching them on popups. You could configure each key with the command that you want to.
+
+Some fkeys are requested by script and it's functions are only temporary:
+
+F3:  opens netsplit information window after a network split
+F5:  join the last channel you've been invited to
+cF2: opens pager window next 30s after you've been paged
+
+Almost all fkeys have default commands that can be setted using fkeys dialog (/fkeys):
+
+F1:  opens this dialog (/helpd)
+F2:  opens control panel dialog (/cpanel)
+sF1:  opens general options dialog (/options)
+sF2:  opens themes dialog (/themes)
+sF3:  opens channel protections dialog (/cprot)
+sF4:  opens personal protections dialog (/pprots)
+
+
+
+
+[Userlist]
+FeedbacK userlist allow you to have 3 different types of users. 
+
+
+- YOU (level 100)
+This level have the main propose of allow you to have your costum events, that only you can access. So, if you want to add that events use level 100. It's seted on script start.
+
+
+- FRIENDS (level 50)
+With friend level an user can access some options, commands and privileges. If you allow him he can access to his own options with this commands:
+
+» Change password:
+  /notice <yournick> PASS <actual pass> <new pass>
+
+» Change networks (* means all):
+  /notice <yournick> NETWORKS <network1,networkN|*>
+
+» Change channels (* means all):
+  /notice <yournick> CHANNELS <#chan1,#chanN|*>
+
+» Change nick:
+  /notice <yournick> NICK <newnick>
+
+» Getting help with command:
+  /notice <yournick> HELP <command>
+
+He can access to misc channel operator commands that should be executed on active channel and only if you're opped or you've IRCop privileges of course:
+
+ .op <nick>
+ .deop <nick>
+ .voice <nick>
+ .devoice <nick>
+ .ban <nick|mask>
+ .kick <nick> [msg]
+ .unban <mask>
+
+All other privileges are obvious, like auto-op, auto-voice, exempted (user is exempted from you protections) and protected (user is protected from kicks, bans or deops)
+
+
+- SHIT (level 10)
+Shitedlisted users are like enemies for you. They can be ignored, deoped, kicked and banned whenever they join or are opped on a channel. 
+
+
+All users can be channel and network specified. And remember configure users *ONLY* through userlist dialog or you can screw up some things (I've tried to avoid that).

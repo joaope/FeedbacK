@@ -1,0 +1,24 @@
+# T H E  B E G I N N I N G
+
+  FeedbacK v3.00b2 (for mIRC 6.16+)
+
+  Mal-Functi - jotex@clix.pt || http://www.feedbackscript.has.it
+               ¯¯¯¯¯¯¯¯¯¯¯¯¯    ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+
+# I N S T A L L A T I O N
+
+
+  1. Unrar file to a <path>
+
+  2. Copy mirc.exe to <path>\FeedbacK
+     - You've to install mIRC to get this file.
+     - Download it from www.mirc.com
+
+  3. Run mirc.exe and go through First Runtime Wizard. Have fun!
+  
+
+  Note: If you're upgrading just close mIRC session (if any) and unrar overwriting all files
+
+
+# EOF

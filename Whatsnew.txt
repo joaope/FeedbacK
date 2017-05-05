@@ -1,0 +1,100 @@
+*text file written without wordwrap*
+
+__________________________________________
+FeedbacK v3.00b2 - 05/07/2005 (mIRC 6.16+)
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+1.  Removed 'Restart script now' option from First Runtime Wizard. Useless and messing up script loading.
+2.  Added Status Window, Channels and Nicklist popups.
+3.  Fixed mTS engine bug not echoing properly sometimes. This affects a lot Blue theme and maybe others.
+4.  Improved Themes dialog to be more user-friendly. 
+5.  Added some more cache options like preview file type/quality/bit-depth.
+6.  Fixed bug with cached themes previews. Now it's really fast to use cache.
+7.  Added support to some more commands like /join, /nick, /quit, /exit, /motd, /stats, /time, /version, /lusers among others.
+8.  /nick command it's themed now.
+9.  Added Options button to Personal Protections dialog to open Protections options dialog.
+10. Fixed /exit command.
+11. Improved Userlist and Userlist Options dialogs to be more user friendly.
+12. Fixed /home command.
+13. Improved settings viewer\editor window. Now all items are alphabetic sorted.
+14. Improved general options dialog with a label for each tab and changed some other little details.
+15. Fixed settings backup import.
+16. Added Popups tab to advanced options dialog. You can now configure which popups to show or hide.
+17. Added usermodes options to General Options dialog.
+    - Script will set usermodes whenever you change your away status, on connect or if you change options while connected.
+    - You can use '/umodes [-d|+modes-modes]' to change them again. Use -d to set options defaults (or away) modes.
+18. Added commands to help dialog. Take a look to all available commands.
+    - Commands with extended help within mIRC's help will enable 'More...' button to open it.
+19. Fixed small menubar popup bug.
+20. Added /settings -t to delete backup file if any.
+21. Added CTCP replies options.
+22. Improved Select File dialog to remember last directory used.
+23. Added some more default tags available.
+    - <CURRENTIME>: $ctime value that can be used for example to format current date and time
+    - <FULLDATE>: date and time string (Eg: Wed Apr 27 23:54:59 2005)
+24. Changed /stats (to open statistics dialog) to /statistics because it's already an internal mIRC command to check server statistics.
+25. Added Drives to Files and Folders menu under Menubar.
+26. Fixed Sound Player bugs.
+    - 'Sort by path' option echoing internal debug information to current window.
+    - Mute ('M') button not turning off properly.
+    - 'Auto-play on sound player start' option not working properly, always playing sound on start even when turned off.
+    - Timed music advertise.
+27. Improved 'Reset settings' feature. Now images and nicklist colors are applied after reset to match settings.
+28. Improved file deleting. Now all files physically removed from disk by script are moved to 'Recycle Bin'.
+    - Files like logs, themes cache, settings backup and others.
+29. Improved Function Keys dialog to better handle keys list.
+30. Fixed small issue with alarm menu setting continuous alarm to every 40 minutes instead of 30.
+31. Fixed ID3 recent files menu showing '(Empty List)' even when it wasn't.
+32. Added Regain Nick System for you to automatically regain the nickname you specify when it's available. Check General Options.
+33. Added 'On Invite' options under General Options dialog working. Forgot to disabled them but they were not working at all.
+34. Fixed settings backup import echoing sucess even when backup file doesn't exist.
+35. Added 'Schemes' to Options menu item under menubar to easily change schemes without open Themes dialog.
+36. Added support to 1.3 mTS version. It supports now themes with multiple fonts specified.
+37. Fixed some small details under mTS themes loading.
+38. Fixed mode change echo on channels not showing nick address.
+
+
+__________________________________________
+FeedbacK v3.00b1 - 25/01/2005 (mIRC 6.16+)
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+1.  Changed script distribution .rar file. Instructions are now inside Install.txt.
+2.  Fixed About dialog bug where checkbox was always on even when turned off. 
+3.  Changed Menubar items a little.
+4.  Added popup menu to SNotices windows.
+5.  Fixed profiles not working properly must of the cases.
+6.  Fixed loaded theme checking not working sometimes.
+7.  Fixed themes preview generation error when 10th or higher scheme was selected and cache was on.
+8.  Changed version format to vX.XXbN where X.XX it's version number and bN appears if it's a Nth beta vesion.
+9.  Fixed settings backup compilation not working under directories with spaces.
+10. Fixed lagbar not opening on default position first time it's enabled.
+11. Fixed input dialog bug with Ok button not being enabled sometimes.
+12. Fixed edit title button under Notes dialog not working at all.
+13. Moved 'close status window on disconnect' to advanced options. Can't be a network-specify option.
+14. Fixed confirmation dialogs (Yes/No, etc) not being modal allowing parent dialogs to be closed before user confirmations.
+15. Re-designed settings options dialog.
+16. Added first runtime wizard. 
+17. All text files like Whatsnew.txt or Readme.txt are now opened with internal notepad.
+18. Moved all aliases from Alias section to Remotes. Just an internal adjustment to remove aliases files.
+19. Removed progress bar on general options dialog close.
+20. Fixed nicklist dialog bug reseting colors on cancel.
+21. Added 'reset settings to default' feature. Check Menubar\Script\Settings.
+22. Fixed /settings command not excluding properly in some situations.
+23. Improved theme loading to work better when reseting settings. You can now exclude 'Theme' section to avoid theme reset.
+    - If you're upgrading script reload theme even if script doesn't ask you to do it or it may not work properly.
+    - Exclude a section using settings options or indicate it when using /settings command (/settings -flags [section1] [sectionN]).
+24. Improved nicklist coloring dialog to add some funcionality to it.
+25. Improved select folder dialog to remember last folder selected.
+26. Added statistics but without networks tab working yet.
+27. Ask for profile on start option only available for (Default) profile because it's always the first to load on start.
+28. Improved control panel with view type and some other minor changes.
+29. Fixed settings backup on start/close.
+30. Added automatic login. Check general options to configure it. Use /login during an IRC session to login your current nick.
+    - Script can't hide passwords from other users so if that's a problem you can lock mIRC (ALT+O\Other\Lock). That's a scripting limitation.
+31. Site URL changed to www.feedbackscrpt.has.it because cbj.net sucks.
+32. Added channel statistics to titlebar items formated like [Total - @Ops\%Halfops\+Voices\Regular] for example [100 - @10\%0\+10\80].
+ 
+
+______________________________________________
+FeedbacK v3.00.Alpha1 - 25/08/2004 (mIRC6.16+)
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+ * (first public release after re-write)
+
